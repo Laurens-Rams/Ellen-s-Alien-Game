@@ -15,7 +15,7 @@ class Alien:
         self.x_coordinate = new_x
         self.y_coordinate = new_y
 
-    def collision_detection(selfself, other_object):
+    def collision_detection(self, other_object):
         pass
 
 def new_aliens_collection(start_positions):
