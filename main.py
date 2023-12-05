@@ -22,3 +22,25 @@ def new_aliens_collection(start_positions):
     return [Alien(x, y) for x, y in start_positions]
 
 
+# create an alien
+alien1 = Alien(5, 10)
+print(alien1.x_coordinate, alien1.y_coordinate)
+print(alien1.health)
+
+# hit the alien
+alien1.hit()
+alien1.hit()
+alien1.hit()
+print(alien1.health)
+
+# Check if the alien is dead or alive
+if alien1.is_alive():
+    print("Is Alive")
+else:
+    print("Dead.")
+
+# Create another alien and check the total count
+alien1 = Alien(2, 1)
+print(Alien.total_aliens_created)
+
+
